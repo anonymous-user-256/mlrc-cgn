@@ -1,0 +1,41 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_shared_course
+#SBATCH --gres=gpu:1
+#SBATCH --job-name=GenData
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=10:00:00
+#SBATCH --mem=32000M
+#SBATCH --output=slurm/output_%A.out
+
+module purge
+module load 2021
+module load Anaconda3/2021.05
+
+# Activate your environment
+source deactivate
+source activate gcn-gpu
+# Run your code
+# weight_path=mnists/experiments/gan_colored_MNIST/weights/ckp.pth
+# dataset=colored_MNIST
+# weight_path=mnists/experiments/gan_double_colored_MNIST/weights/ckp.pth
+# dataset=double_colored_MNIST
+# weight_path=mnists/experiments/gan_wildlife_MNIST/weights/ckp.pth
+# dataset=wildlife_MNIST
+
+weight_path=mnists/experiments/cgn_colored_MNIST/weights/ckp.pth
+dataset=colored_MNIST
+echo "Generating data for $dataset with $weight_path"
+python mnists/generate_data.py --weight_path $weight_path --dataset $dataset
+
+
+weight_path=mnists/experiments/cgn_double_colored_MNIST/weights/ckp.pth
+dataset=double_colored_MNIST
+echo "Generating data for $dataset with $weight_path"
+python mnists/generate_data.py --weight_path $weight_path --dataset $dataset
+
+weight_path=mnists/experiments/cgn_wildlife_MNIST/weights/ckp.pth
+dataset=wildlife_MNIST
+echo "Generating data for $dataset with $weight_path"
+python mnists/generate_data.py --weight_path $weight_path --dataset $dataset

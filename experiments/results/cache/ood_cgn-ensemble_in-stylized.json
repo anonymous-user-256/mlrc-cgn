@@ -1,0 +1,10 @@
+{
+    "classifier": "cgn-ensemble",
+    "ood_dataset": "in-stylized",
+    "batch_size": 128,
+    "num_workers": 2,
+    "seed": 0,
+    "weight_path": "/home/lcur0478/anonymous/projects/fact-team3/cgn_framework/imagenet/weights/classifier_on_in-mini_model_best.pth",
+    "ignore_cache": false,
+    "acc1": 17.1875
+}
