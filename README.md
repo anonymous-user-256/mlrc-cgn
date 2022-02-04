@@ -9,7 +9,7 @@ This repository is a replication implementation of [Counterfactual Generative Ne
 <!-- >📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials -->
 
 ![Sample](./media/sample_gradcam_label_castle_index_1871-1.png)
-*GradCAM-based heatmap visualized for shape, texture and background heads of CGN ensemble classifier for a sample image from ImageNet-mini. $y$ denotes the original label while $\hat{y}$ denotes the predicted label by each of the three heads.*
+*GradCAM-based heatmap visualized for shape, texture and background heads of CGN ensemble classifier for a sample image from ImageNet-mini. `y` denotes the original label while `y_hat` denotes the predicted label by each of the three heads.*
 
 ## Setup and Requirements
 
