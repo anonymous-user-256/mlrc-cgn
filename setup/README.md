@@ -5,7 +5,7 @@
 ```sh
 # clone the repository
 git clone git@github.com:anonymous-user-256/mlrc-cgn.git
-cd fact-team3
+cd mlrc-cgn.git
 
 # switch to dev branch
 git checkout dev
