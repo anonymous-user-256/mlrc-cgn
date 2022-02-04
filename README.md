@@ -15,7 +15,7 @@ This repository is a replication implementation of [Counterfactual Generative Ne
 
 Clone the repository:
 ```sh
-git clone git@github.com:anonymous-user-256/mlrc-cgn.git
+git clone git@github.com:danilodegoede/fact-team3.git
 cd fact-team3
 ```
 

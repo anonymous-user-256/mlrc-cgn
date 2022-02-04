@@ -1,0 +1,5 @@
+{
+    "orignal_experiment": "gan_colored_MNIST_2022_01_16_14_28_48_tmp",
+    "orignal_ckpt_path": "mnists/experiments/gan_colored_MNIST_2022_01_16_14_28_48_tmp/weights/ckp_50000.pth",
+    "owner": "piyush"
+}

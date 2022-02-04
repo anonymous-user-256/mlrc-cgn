@@ -1,0 +1,10 @@
+{
+    "classifier": "resnet50",
+    "ood_dataset": "in-sketch",
+    "batch_size": 128,
+    "num_workers": 2,
+    "seed": 0,
+    "weight_path": null,
+    "ignore_cache": false,
+    "acc1": 24.092
+}
